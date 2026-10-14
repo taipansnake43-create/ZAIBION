@@ -1,0 +1,44 @@
+{
+  "symbol": "BTC-USD",
+  "tf_label": "1h",
+  "started_at": "2026-10-14T04:33:40.651710Z",
+  "last_update": "2026-10-14T04:33:40.651744Z",
+  "stages": {
+    "fetch_data": {
+      "done": true
+    },
+    "indicators": {
+      "done": true
+    },
+    "advanced_features": {
+      "done": true
+    },
+    "structure": {
+      "done": true
+    },
+    "long_committee": {
+      "done": true
+    },
+    "short_committee": {
+      "done": true
+    },
+    "long_dl": {
+      "done": true
+    },
+    "short_dl": {
+      "done": true
+    },
+    "specialized_nns": {
+      "done": true
+    },
+    "stacker": {
+      "done": true
+    },
+    "save_dashboard": {
+      "done": true
+    }
+  },
+  "verdict": "FAST_MODE_READY",
+  "trained_candles": 200000,
+  "_saved_at": "2026-10-14T04:33:40.651756Z"
+}
