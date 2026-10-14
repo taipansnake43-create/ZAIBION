@@ -1,0 +1,62 @@
+{
+  "symbol": "BTC-USD",
+  "tf_label": "1h",
+  "price": 83704.4,
+  "direction": "SHORT",
+  "verdict": "NO_TRADE",
+  "verdict_text": "NO TRADE",
+  "confluence": 0.3625,
+  "win_prob": 0.4878,
+  "long_conviction": 0.5235168970003868,
+  "short_conviction": 0.5420681389269848,
+  "setup": {
+    "direction": "SHORT",
+    "entry": 83704.4,
+    "entry_zone_low": 83668.706429,
+    "entry_zone_high": 83793.633929,
+    "sl": 85094.574571,
+    "tp1": 82070.52,
+    "tp2": 81436.5,
+    "tp3": 80854.6,
+    "rr1": 1.18,
+    "rr2": 1.63,
+    "rr3": 2.05,
+    "avg_rr_partial_close": 3.71,
+    "risk": 1390.174571,
+    "risk_pct": 1.6608,
+    "round_trip_R": 0.4509,
+    "quality": "MEDIUM",
+    "valid": true,
+    "fallback_used": false,
+    "reason": "Valid 2.9:1 R/R | TP3=5.1:1 | avg_partial=3.7:1 | SL \u2265 1\u00d7ATR away",
+    "partial_close_plan": "50% @ TP1 \u00b7 30% @ TP2 \u00b7 20% @ TP3 (trailing)",
+    "invalidation": "If price closes beyond $84,261.282620 (the SL), the SHORT thesis is invalidated. Also invalidated if structure shifts: a clean opposite-side break of structure or close beyond the entry zone with strong volume.",
+    "atr_used": 356.935714,
+    "sl_dist_atr": 3.89,
+    "tp1_dist_atr": 4.58,
+    "original_sl": 84261.28262,
+    "smart_sl_candidates": {
+      "original_struct": 84261.28262,
+      "atr_buffer": 84618.218334,
+      "wick_buffer": 84630.76262,
+      "vp_low_node": 85094.574571
+    },
+    "smart_sl_chosen": "FURTHEST_SAFE",
+    "smart_sl_aggressiveness": "balanced",
+    "rr_1": 1.18,
+    "rr_2": 1.63,
+    "rr_3": 2.05,
+    "smart_sl_reason": "Smart-SL widened from 84261.282620 \u2192 85094.574571 (3.89\u00d7 ATR) \u00b7 chosen=vp_low_node \u00b7 signals=['original_struct', 'atr_buffer', 'wick_buffer', 'vp_low_node']"
+  },
+  "tp_sl_prob": {
+    "tp1_prob": 38.1,
+    "tp2_prob": 21.1,
+    "sl_prob": 40.3,
+    "sample_size": 375
+  },
+  "vetoes": [
+    "Expected value too low: EV = +0.063R (win_prob 48.8% \u00d7 RR 1:1.18) -- not +EV",
+    "Calibrated win prob 48.8% below 55% minimum"
+  ],
+  "_saved_at": "2026-10-14T04:59:48.019540Z"
+}
