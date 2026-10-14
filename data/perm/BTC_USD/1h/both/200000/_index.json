@@ -1,0 +1,14 @@
+{
+  "classical": {},
+  "dl": {},
+  "nn": {
+    "price_reg": {
+      "class": "PriceRegressionEnsemble",
+      "size_kb": 658.4,
+      "saved_to": "storage",
+      "train_acc": 0.5010567101091934,
+      "saved_at": 1791951760.7910993
+    }
+  },
+  "_saved_at": "2026-10-14T04:22:40.791178Z"
+}
