@@ -22,7 +22,14 @@
       "saved_to": "storage",
       "train_acc": 0.5,
       "saved_at": 1791951865.7350323
+    },
+    "regime_nn": {
+      "class": "RegimeDetectorNNWrapper",
+      "size_kb": 133.6,
+      "saved_to": "storage",
+      "train_acc": 0.5,
+      "saved_at": 1791951907.2661343
     }
   },
-  "_saved_at": "2026-10-14T04:24:25.735106Z"
+  "_saved_at": "2026-10-14T04:25:07.266168Z"
 }
