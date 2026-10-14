@@ -15,7 +15,14 @@
       "saved_to": "storage",
       "train_acc": 0.5,
       "saved_at": 1791951781.1766725
+    },
+    "sentiment_nn": {
+      "class": "SentimentNNWrapper",
+      "size_kb": 204.8,
+      "saved_to": "storage",
+      "train_acc": 0.5,
+      "saved_at": 1791951865.7350323
     }
   },
-  "_saved_at": "2026-10-14T04:23:01.176697Z"
+  "_saved_at": "2026-10-14T04:24:25.735106Z"
 }
