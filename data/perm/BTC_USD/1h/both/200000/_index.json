@@ -8,7 +8,14 @@
       "saved_to": "storage",
       "train_acc": 0.5010567101091934,
       "saved_at": 1791951760.7910993
+    },
+    "rl_agent": {
+      "class": "RLTradingAgent",
+      "size_kb": 857.9,
+      "saved_to": "storage",
+      "train_acc": 0.5,
+      "saved_at": 1791951781.1766725
     }
   },
-  "_saved_at": "2026-10-14T04:22:40.791178Z"
+  "_saved_at": "2026-10-14T04:23:01.176697Z"
 }
