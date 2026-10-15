@@ -48,9 +48,16 @@
       "size_kb": 171.6,
       "saved_to": "storage",
       "saved_at": 1792068522.8213437
+    },
+    "lgb": {
+      "wf": 0.992638947815019,
+      "needs_sc": false,
+      "size_kb": 221.8,
+      "saved_to": "storage",
+      "saved_at": 1792068535.994317
     }
   },
   "dl": {},
   "nn": {},
-  "_saved_at": "2026-10-15T12:48:42.821369Z"
+  "_saved_at": "2026-10-15T12:48:55.994342Z"
 }
