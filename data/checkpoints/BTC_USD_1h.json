@@ -2,7 +2,7 @@
   "symbol": "BTC-USD",
   "tf_label": "1h",
   "started_at": "2026-10-14T04:33:40.651710Z",
-  "last_update": "2026-10-14T04:33:40.651744Z",
+  "last_update": "2026-10-15T12:25:49.443311Z",
   "stages": {
     "fetch_data": {
       "done": true
@@ -39,6 +39,6 @@
     }
   },
   "verdict": "FAST_MODE_READY",
-  "trained_candles": 200000,
-  "_saved_at": "2026-10-14T04:33:40.651756Z"
+  "trained_candles": 100000,
+  "_saved_at": "2026-10-15T12:25:49.443331Z"
 }
