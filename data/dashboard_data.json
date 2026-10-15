@@ -25,14 +25,14 @@
     },
     "deriv": {
       "pair": "BTC_USDT",
-      "funding_rate": 5.3e-05,
-      "oi_usd": 2056119464.11776,
-      "contracts": 254106368,
-      "ls_ratio": 1.7190818493710178,
-      "mark_price": 80915.7,
-      "index_price": 80952.36,
-      "long_users": 21045,
-      "short_users": 12242
+      "funding_rate": 5.4e-05,
+      "oi_usd": 2042447592.3809001,
+      "contracts": 253180028,
+      "ls_ratio": 1.7210689767898006,
+      "mark_price": 80671.75,
+      "index_price": 80713.98,
+      "long_users": 21059,
+      "short_users": 12236
     },
     "direction": "SHORT",
     "setup": {
@@ -238,7 +238,7 @@
       {
         "check": "freshness",
         "ok": false,
-        "msg": "Stale data: 3677s old > 120s"
+        "msg": "Stale data: 5583s old > 120s"
       },
       {
         "check": "confidence",
@@ -898,13 +898,13 @@
       "liq_short_cascade": 0.0,
       "liq_total_24h": 0.010416666666666666,
       "liq_imbalance": -1.0,
-      "ob_imbalance": 1.1213342196209046,
-      "ob_depth_ratio": 1.1213342196209046,
-      "ob_spread_bps": 0.012359083276277896,
+      "ob_imbalance": 0.517054363529005,
+      "ob_depth_ratio": 0.517054363529005,
+      "ob_spread_bps": 0.012395467472281424,
       "ob_source": "bybit",
-      "funding_8ex_avg": 5.675944450246e-05,
-      "funding_8ex_skew": 9.712265790590683e-06,
-      "funding_max_ex": "bitget",
+      "funding_8ex_avg": 5.715126707524e-05,
+      "funding_8ex_skew": 9.149287643930332e-06,
+      "funding_max_ex": "kucoinfutures",
       "funding_max_rate": 6.8e-05,
       "oi_change_24h": 0.0,
       "n_exchanges": 5
@@ -3595,6 +3595,6 @@
     "threshold": 0.62,
     "min_win_prob": 0.55
   },
-  "saved_at": "2026-10-15T12:01:37.159077Z",
-  "_saved_at": "2026-10-15T12:01:37.159094Z"
+  "saved_at": "2026-10-15T12:33:21.810362Z",
+  "_saved_at": "2026-10-15T12:33:21.810380Z"
 }
