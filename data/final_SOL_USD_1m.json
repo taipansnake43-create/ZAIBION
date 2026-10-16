@@ -1,0 +1,62 @@
+{
+  "symbol": "SOL-USD",
+  "tf_label": "1m",
+  "price": 105.41,
+  "direction": "SHORT",
+  "verdict": "WATCH",
+  "verdict_text": "WATCH (best: LONG at 50%)",
+  "confluence": 0.5031,
+  "win_prob": 0.657,
+  "long_conviction": 0.9638606043463914,
+  "short_conviction": 0.9782574364776315,
+  "setup": {
+    "direction": "SHORT",
+    "entry": 105.41,
+    "entry_zone_low": 105.3965,
+    "entry_zone_high": 105.44375,
+    "sl": 105.8285,
+    "tp1": 104.64,
+    "tp2": 104.505,
+    "tp3": 104.06,
+    "rr1": 1.84,
+    "rr2": 2.16,
+    "rr3": 3.23,
+    "avg_rr_partial_close": 3.43,
+    "risk": 0.4185,
+    "risk_pct": 0.397,
+    "round_trip_R": 1.1712,
+    "quality": "MEDIUM",
+    "valid": true,
+    "fallback_used": false,
+    "reason": "Valid 2.9:1 R/R | TP3=5.0:1 | avg_partial=3.4:1 | SL \u2265 1\u00d7ATR away",
+    "partial_close_plan": "50% @ TP1 \u00b7 30% @ TP2 \u00b7 20% @ TP3 (trailing)",
+    "invalidation": "If price closes beyond $105.680000 (the SL), the SHORT thesis is invalidated. Also invalidated if structure shifts: a clean opposite-side break of structure or close beyond the entry zone with strong volume.",
+    "atr_used": 0.135,
+    "sl_dist_atr": 3.1,
+    "tp1_dist_atr": 5.7,
+    "original_sl": 105.68,
+    "smart_sl_candidates": {
+      "original_struct": 105.68,
+      "atr_buffer": 105.815,
+      "wick_buffer": 105.8276,
+      "vp_low_node": 105.8285
+    },
+    "smart_sl_chosen": "FURTHEST_SAFE",
+    "smart_sl_aggressiveness": "balanced",
+    "rr_1": 1.84,
+    "rr_2": 2.16,
+    "rr_3": 3.23,
+    "smart_sl_reason": "Smart-SL widened from 105.680000 \u2192 105.828500 (3.10\u00d7 ATR) \u00b7 chosen=vp_low_node \u00b7 signals=['original_struct', 'atr_buffer', 'wick_buffer', 'vp_low_node']"
+  },
+  "tp_sl_prob": {
+    "tp1_prob": 21.1,
+    "tp2_prob": 13.3,
+    "sl_prob": 41.9,
+    "sample_size": 375
+  },
+  "vetoes": [
+    "TP1 hit prob 21.1% below 35.0% minimum",
+    "SL hit prob 41.9% too high vs TP1 21.1%"
+  ],
+  "_saved_at": "2026-10-16T03:57:22.108584Z"
+}
