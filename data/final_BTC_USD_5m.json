@@ -1,0 +1,62 @@
+{
+  "symbol": "BTC-USD",
+  "tf_label": "5m",
+  "price": 81723.8,
+  "direction": "LONG",
+  "verdict": "NO_TRADE",
+  "verdict_text": "NO TRADE",
+  "confluence": 0.4921,
+  "win_prob": 0.5475,
+  "long_conviction": 0.8710159923416955,
+  "short_conviction": 0.8707508610899946,
+  "setup": {
+    "direction": "LONG",
+    "entry": 81723.8,
+    "entry_zone_low": 81711.767857,
+    "entry_zone_high": 81728.612857,
+    "sl": 81507.221429,
+    "tp1": 82422.19,
+    "tp2": 82927.9,
+    "tp3": 83535.22,
+    "rr1": 3.22,
+    "rr2": 5.56,
+    "rr3": 8.36,
+    "avg_rr_partial_close": 6.1,
+    "risk": 216.578571,
+    "risk_pct": 0.265,
+    "round_trip_R": 1.3938,
+    "quality": "HIGH",
+    "valid": true,
+    "fallback_used": false,
+    "reason": "Valid 4.0:1 R/R | TP3=10.3:1 | avg_partial=6.1:1 | SL \u2265 1\u00d7ATR away",
+    "partial_close_plan": "50% @ TP1 \u00b7 30% @ TP2 \u00b7 20% @ TP3 (trailing)",
+    "invalidation": "If price closes beyond $81,547.904385 (the SL), the LONG thesis is invalidated. Also invalidated if structure shifts: a clean opposite-side break of structure or close beyond the entry zone with strong volume.",
+    "atr_used": 48.128571,
+    "sl_dist_atr": 4.5,
+    "tp1_dist_atr": 14.51,
+    "original_sl": 81547.904385,
+    "smart_sl_candidates": {
+      "original_struct": 81547.904385,
+      "atr_buffer": 81499.775814,
+      "wick_buffer": 81458.684385
+    },
+    "smart_sl_chosen": "FURTHEST_SAFE",
+    "smart_sl_aggressiveness": "balanced",
+    "rr_1": 3.22,
+    "rr_2": 5.56,
+    "rr_3": 8.36,
+    "smart_sl_reason": "Smart-SL widened from 81547.904385 \u2192 81507.221429 (4.50\u00d7 ATR) \u00b7 chosen=wick_buffer \u00b7 signals=['original_struct', 'atr_buffer', 'wick_buffer']"
+  },
+  "tp_sl_prob": {
+    "tp1_prob": 13.6,
+    "tp2_prob": 3.2,
+    "sl_prob": 61.6,
+    "sample_size": 375
+  },
+  "vetoes": [
+    "TP1 hit prob 13.6% below 35.0% minimum",
+    "SL hit prob 61.6% too high vs TP1 13.6%",
+    "Calibrated win prob 54.8% below 55% minimum"
+  ],
+  "_saved_at": "2026-10-18T06:26:12.839073Z"
+}
