@@ -11,10 +11,10 @@
     },
     "rl_agent": {
       "class": "RLTradingAgent",
-      "size_kb": 858.3,
+      "size_kb": 860.4,
       "saved_to": "storage",
       "train_acc": 0.5,
-      "saved_at": 1792303802.5827284
+      "saved_at": 1792385016.142529
     },
     "sentiment_nn": {
       "class": "SentimentNNWrapper",
@@ -31,5 +31,5 @@
       "saved_at": 1792303920.0431874
     }
   },
-  "_saved_at": "2026-10-19T04:43:18.075024Z"
+  "_saved_at": "2026-10-19T04:43:36.142556Z"
 }
