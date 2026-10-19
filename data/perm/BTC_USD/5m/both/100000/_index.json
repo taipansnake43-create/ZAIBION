@@ -18,10 +18,10 @@
     },
     "sentiment_nn": {
       "class": "SentimentNNWrapper",
-      "size_kb": 204.6,
+      "size_kb": 205.1,
       "saved_to": "storage",
       "train_acc": 0.5,
-      "saved_at": 1792303880.0462584
+      "saved_at": 1792385098.7614794
     },
     "regime_nn": {
       "class": "RegimeDetectorNNWrapper",
@@ -31,5 +31,5 @@
       "saved_at": 1792303920.0431874
     }
   },
-  "_saved_at": "2026-10-19T04:43:36.142556Z"
+  "_saved_at": "2026-10-19T04:44:58.761507Z"
 }
