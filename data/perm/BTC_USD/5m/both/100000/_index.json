@@ -4,10 +4,10 @@
   "nn": {
     "price_reg": {
       "class": "PriceRegressionEnsemble",
-      "size_kb": 658.3,
+      "size_kb": 660.5,
       "saved_to": "storage",
-      "train_acc": 0.5060614603890612,
-      "saved_at": 1792303784.0640666
+      "train_acc": 0.5203693261911474,
+      "saved_at": 1792384998.0749872
     },
     "rl_agent": {
       "class": "RLTradingAgent",
@@ -31,5 +31,5 @@
       "saved_at": 1792303920.0431874
     }
   },
-  "_saved_at": "2026-10-18T06:12:00.043211Z"
+  "_saved_at": "2026-10-19T04:43:18.075024Z"
 }
