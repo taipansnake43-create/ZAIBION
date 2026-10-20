@@ -3,12 +3,12 @@
     "symbol": "BTC-USD",
     "name": "Bitcoin",
     "tf_label": "5m",
-    "price": 81802.4,
+    "price": 81673.8,
     "n_total": 4000,
     "trade_window": 2000,
     "train_cutoff": 3900,
-    "newest": "2026-10-20 06:50:00+00:00",
-    "oldest": "2026-10-06 09:35:00+00:00",
+    "newest": "2026-10-20 07:20:00+00:00",
+    "oldest": "2026-10-06 10:05:00+00:00",
     "nlp": {
       "score": 0.08333333333333333,
       "headlines": [
@@ -25,58 +25,58 @@
     },
     "deriv": {
       "pair": "BTC_USDT",
-      "funding_rate": 4.4e-05,
-      "oi_usd": 2208099069.001592,
-      "contracts": 270022376,
-      "ls_ratio": 1.4581572273879966,
-      "mark_price": 81774.67,
-      "index_price": 81809.32,
-      "long_users": 18975,
-      "short_users": 13013
+      "funding_rate": 4.7e-05,
+      "oi_usd": 2207614212.32688,
+      "contracts": 270507144,
+      "ls_ratio": 1.4596211365902294,
+      "mark_price": 81610.2,
+      "index_price": 81642.61,
+      "long_users": 19032,
+      "short_users": 13039
     },
     "direction": "LONG",
     "setup": {
       "direction": "LONG",
-      "entry": 81802.4,
-      "entry_zone_low": 81779.517857,
-      "entry_zone_high": 81811.552857,
-      "sl": 81390.521429,
-      "tp1": 82728.65,
-      "tp2": 82820.178571,
-      "tp3": 83632.97143,
-      "rr1": 2.25,
-      "rr2": 2.47,
+      "entry": 81673.8,
+      "entry_zone_low": 81657.025,
+      "entry_zone_high": 81680.51,
+      "sl": 81371.85,
+      "tp1": 82344.8,
+      "tp2": 82411.9,
+      "tp3": 83015.8,
+      "rr1": 2.22,
+      "rr2": 2.44,
       "rr3": 4.44,
-      "avg_rr_partial_close": 3.1,
-      "risk": 411.878571,
-      "risk_pct": 0.5035,
-      "round_trip_R": 0.6703,
-      "quality": "MEDIUM",
+      "avg_rr_partial_close": 3.08,
+      "risk": 301.95,
+      "risk_pct": 0.3697,
+      "round_trip_R": 0.9129,
+      "quality": "FALLBACK_ATR",
       "valid": true,
-      "fallback_used": false,
-      "reason": "Valid 2.5:1 R/R | TP3=5.0:1 | avg_partial=3.1:1 | SL \u2265 1\u00d7ATR away",
+      "fallback_used": true,
+      "reason": "FALLBACK setup \u2014 no structural TP1 with \u22651:2.5 R/R; used ATR-based TP1 at 2.5:1 (use with caution)",
       "partial_close_plan": "50% @ TP1 \u00b7 30% @ TP2 \u00b7 20% @ TP3 (trailing)",
-      "invalidation": "If price closes beyond $81,436.285714 (the SL), the LONG thesis is invalidated. Also invalidated if structure shifts: a clean opposite-side break of structure or close beyond the entry zone with strong volume.",
-      "atr_used": 91.528571,
+      "invalidation": "If price closes beyond $81,405.400000 (the SL), the LONG thesis is invalidated. Also invalidated if structure shifts: a clean opposite-side break of structure or close beyond the entry zone with strong volume.",
+      "atr_used": 67.1,
       "sl_dist_atr": 4.5,
-      "tp1_dist_atr": 10.12,
-      "original_sl": 81436.285714,
+      "tp1_dist_atr": 10.0,
+      "original_sl": 81405.4,
       "smart_sl_candidates": {
-        "original_struct": 81436.285714,
-        "atr_buffer": 81344.757143,
-        "wick_buffer": 81324.193714
+        "original_struct": 81405.4,
+        "atr_buffer": 81338.3,
+        "wick_buffer": 81288.448
       },
       "smart_sl_chosen": "FURTHEST_SAFE",
       "smart_sl_aggressiveness": "balanced",
-      "rr_1": 2.25,
-      "rr_2": 2.47,
+      "rr_1": 2.22,
+      "rr_2": 2.44,
       "rr_3": 4.44,
-      "smart_sl_reason": "Smart-SL widened from 81436.285714 \u2192 81390.521429 (4.50\u00d7 ATR) \u00b7 chosen=wick_buffer \u00b7 signals=['original_struct', 'atr_buffer', 'wick_buffer']"
+      "smart_sl_reason": "Smart-SL widened from 81405.400000 \u2192 81371.850000 (4.50\u00d7 ATR) \u00b7 chosen=wick_buffer \u00b7 signals=['original_struct', 'atr_buffer', 'wick_buffer']"
     },
     "tp_sl_prob": {
-      "tp1_prob": 6.7,
-      "tp2_prob": 4.8,
-      "sl_prob": 39.2,
+      "tp1_prob": 13.6,
+      "tp2_prob": 10.7,
+      "sl_prob": 50.4,
       "sample_size": 375
     },
     "committee": {
@@ -207,7 +207,7 @@
       "direction": "SHORT"
     },
     "confidence": {
-      "score": 50.3,
+      "score": 50.2,
       "grade": "C",
       "pass": false,
       "threshold": 68,
@@ -218,14 +218,14 @@
         "confluence": 10.0,
         "regime_fit": 3.0,
         "backtest_oos": 3.0,
-        "risk_reward": 6.2,
+        "risk_reward": 6.1,
         "spread_penalty": 0.0
       },
       "inputs": {
         "p_long": 0.8767,
         "p_short": 0.8708,
         "edge": 0.0059,
-        "rr": 2.25,
+        "rr": 2.22,
         "regime": "RANGING",
         "bt_wr": 0.5,
         "bt_trades": 0
@@ -235,19 +235,19 @@
       ],
       "direction": "LONG"
     },
-    "confidence_score": 50.3,
+    "confidence_score": 50.2,
     "confidence_grade": "C",
     "trade_allowed": false,
     "guard_checks": [
       {
         "check": "freshness",
         "ok": false,
-        "msg": "Stale data: 538s old > 120s"
+        "msg": "Stale data: 573s old > 120s"
       },
       {
         "check": "confidence",
         "ok": false,
-        "msg": "Confidence 50.3 < 62 \u2013 BLOCKED"
+        "msg": "Confidence 50.2 < 62 \u2013 BLOCKED"
       },
       {
         "check": "risk",
@@ -270,10 +270,10 @@
     "regime": "RANGING",
     "regime_info": {
       "regime": "RANGING",
-      "adx": 55.57,
-      "vol_pct": 0.088,
-      "hurst": 0.359,
-      "vol_percentile": 0.91
+      "adx": 31.86,
+      "vol_pct": 0.084,
+      "hurst": 0.386,
+      "vol_percentile": 0.86
     },
     "monte_carlo": {
       "available": false
@@ -299,13 +299,6 @@
     },
     "order_blocks": {
       "bull": [
-        {
-          "top": 82071.6,
-          "bottom": 82065.1,
-          "time": "10-20 04:45",
-          "mitigated": true,
-          "vol_ok": false
-        },
         {
           "top": 82087.2,
           "bottom": 82024.0,
@@ -340,16 +333,16 @@
           "time": "10-20 06:10",
           "mitigated": false,
           "vol_ok": true
+        },
+        {
+          "top": 81830.8,
+          "bottom": 81802.4,
+          "time": "10-20 06:50",
+          "mitigated": true,
+          "vol_ok": false
         }
       ],
       "bear": [
-        {
-          "top": 82107.3,
-          "bottom": 82065.1,
-          "time": "10-20 04:50",
-          "mitigated": true,
-          "vol_ok": false
-        },
         {
           "top": 82029.2,
           "bottom": 82024.0,
@@ -382,6 +375,13 @@
           "top": 81850.0,
           "bottom": 81839.8,
           "time": "10-20 06:40",
+          "mitigated": false,
+          "vol_ok": false
+        },
+        {
+          "top": 81827.6,
+          "bottom": 81809.2,
+          "time": "10-20 07:00",
           "mitigated": false,
           "vol_ok": false
         }
@@ -490,22 +490,6 @@
     "fvgs": [
       {
         "type": "BULL",
-        "low": 81665.2,
-        "high": 81778.8,
-        "size": 113.6,
-        "time": "10-20 02:50",
-        "mitigated": true
-      },
-      {
-        "type": "BULL",
-        "low": 81846.9,
-        "high": 81909.7,
-        "size": 62.8,
-        "time": "10-20 03:10",
-        "mitigated": true
-      },
-      {
-        "type": "BULL",
         "low": 81911.1,
         "high": 81980.7,
         "size": 69.6,
@@ -583,90 +567,99 @@
         "size": 0.5,
         "time": "10-20 06:30",
         "mitigated": true
+      },
+      {
+        "type": "BEAR",
+        "low": 81753.2,
+        "high": 81770.2,
+        "size": 17.0,
+        "time": "10-20 07:15",
+        "mitigated": false
+      },
+      {
+        "type": "BEAR",
+        "low": 81714.3,
+        "high": 81753.2,
+        "size": 38.9,
+        "time": "10-20 07:20",
+        "mitigated": false
       }
     ],
     "sr_levels": [
       {
-        "price": 81825.47,
-        "strength": 1437.0,
-        "type": "S",
-        "sources": "PV+VP+ZZ",
-        "dist_pct": 0.03
-      },
-      {
-        "price": 82728.65,
-        "strength": 1,
+        "price": 81781.61,
+        "strength": 1446.0,
         "type": "R",
-        "sources": "VP",
-        "dist_pct": 1.13
+        "sources": "PV+VP+ZZ",
+        "dist_pct": 0.13
       }
     ],
     "bos": [
       {
-        "idx": 712,
+        "idx": 706,
         "price": 82413.7,
         "type": "BOS_BULL",
         "time": "2026-10-15 19:35:00",
         "vol_ok": "True"
       },
       {
-        "idx": 712,
+        "idx": 706,
         "price": 82413.7,
         "type": "CHOCH_BULL",
         "time": "2026-10-15 19:35:00",
         "vol_ok": "True"
       },
       {
-        "idx": 728,
+        "idx": 722,
         "price": 82112.1,
         "type": "BOS_BULL",
         "time": "2026-10-15 20:55:00",
         "vol_ok": "True"
       },
       {
-        "idx": 728,
+        "idx": 722,
         "price": 82112.1,
         "type": "CHOCH_BULL",
         "time": "2026-10-15 20:55:00",
         "vol_ok": "True"
       },
       {
-        "idx": 755,
+        "idx": 749,
         "price": 82197.2,
         "type": "BOS_BULL",
         "time": "2026-10-15 23:10:00",
         "vol_ok": "True"
       },
       {
-        "idx": 755,
+        "idx": 749,
         "price": 82197.2,
         "type": "CHOCH_BULL",
         "time": "2026-10-15 23:10:00",
         "vol_ok": "True"
       },
       {
-        "idx": 765,
+        "idx": 759,
         "price": 82270.0,
         "type": "BOS_BULL",
         "time": "2026-10-16 00:00:00",
         "vol_ok": "True"
       },
       {
-        "idx": 765,
+        "idx": 759,
         "price": 82270.0,
         "type": "CHOCH_BULL",
         "time": "2026-10-16 00:00:00",
         "vol_ok": "True"
       },
       {
-        "idx": 769,
+        "idx": 763,
         "price": 82249.2,
         "type": "BOS_BULL",
         "time": "2026-10-16 00:20:00",
         "vol_ok": "True"
       },
       {
-        "idx": 769,
+        "idx": 763,
         "price": 82249.2,
         "type": "CHOCH_BULL",
         "time": "2026-10-16 00:20:00",
@@ -687,24 +680,24 @@
     },
     "hunting": [],
     "advanced_features": {
-      "prophet_trend": -0.01771792868743261,
+      "prophet_trend": -0.010674521270825963,
       "prophet_changepoint": 66.66666666666667,
-      "prophet_seasonality": -0.09051000954675176,
-      "prophet_forecast_24h_pct": -5.083708118415083,
-      "ofi_5": 0.1950299059047345,
-      "ofi_15": 0.06741569674060842,
-      "ofi_30": -0.13872647117263828,
-      "ofi_z": -0.06837318780171363,
+      "prophet_seasonality": -0.5200319400169315,
+      "prophet_forecast_24h_pct": -4.367247463001214,
+      "ofi_5": -0.5766965146166676,
+      "ofi_15": -0.11840029968144919,
+      "ofi_30": -0.15833737681676516,
+      "ofi_z": -0.5661153107598085,
       "liq_long_cascade": 0.0,
       "liq_short_cascade": 0.0,
       "liq_total_24h": 0.0,
       "liq_imbalance": 0.0,
-      "ob_imbalance": 2.399607039196712,
-      "ob_depth_ratio": 2.399607039196712,
-      "ob_spread_bps": 0.012224542846872181,
+      "ob_imbalance": 0.8603755428956138,
+      "ob_depth_ratio": 0.8603755428956138,
+      "ob_spread_bps": 0.012248289986327328,
       "ob_source": "bybit",
-      "funding_8ex_avg": 7.553625804218001e-05,
-      "funding_8ex_skew": 1.945831508453589e-05,
+      "funding_8ex_avg": 7.073854632664e-05,
+      "funding_8ex_skew": 1.7244974854084104e-05,
       "funding_max_ex": "bitget",
       "funding_max_rate": 0.0001,
       "oi_change_24h": 0.0,
@@ -714,105 +707,105 @@
       "predictions": [
         {
           "i": 1,
-          "time": "2026-10-20 06:55:00+00:00",
-          "open": 81802.4,
-          "close": 81774.0212,
-          "high": 81852.3854,
-          "low": 81695.6571,
-          "uncertainty_pct": 0.062
+          "time": "2026-10-20 07:25:00+00:00",
+          "open": 81673.8,
+          "close": 81650.9734,
+          "high": 81720.6283,
+          "low": 81581.3184,
+          "uncertainty_pct": 0.061
         },
         {
           "i": 2,
-          "time": "2026-10-20 07:00:00+00:00",
-          "open": 81774.0212,
-          "close": 81752.74,
-          "high": 81852.1712,
-          "low": 81653.3088,
-          "uncertainty_pct": 0.088
+          "time": "2026-10-20 07:30:00+00:00",
+          "open": 81650.9734,
+          "close": 81633.9701,
+          "high": 81724.1244,
+          "low": 81543.8158,
+          "uncertainty_pct": 0.086
         },
         {
           "i": 3,
-          "time": "2026-10-20 07:05:00+00:00",
-          "open": 81752.74,
-          "close": 81735.0075,
-          "high": 81850.5951,
-          "low": 81619.42,
-          "uncertainty_pct": 0.108
+          "time": "2026-10-20 07:35:00+00:00",
+          "open": 81633.9701,
+          "close": 81619.8784,
+          "high": 81725.7555,
+          "low": 81514.0014,
+          "uncertainty_pct": 0.105
         },
         {
           "i": 4,
-          "time": "2026-10-20 07:10:00+00:00",
-          "open": 81735.0075,
-          "close": 81719.0495,
-          "high": 81848.2507,
-          "low": 81589.8482,
-          "uncertainty_pct": 0.125
+          "time": "2026-10-20 07:40:00+00:00",
+          "open": 81619.8784,
+          "close": 81607.2427,
+          "high": 81726.3695,
+          "low": 81488.1158,
+          "uncertainty_pct": 0.121
         },
         {
           "i": 5,
-          "time": "2026-10-20 07:15:00+00:00",
-          "open": 81719.0495,
-          "close": 81703.9786,
-          "high": 81845.1679,
-          "low": 81562.7892,
-          "uncertainty_pct": 0.139
+          "time": "2026-10-20 07:45:00+00:00",
+          "open": 81607.2427,
+          "close": 81595.3348,
+          "high": 81726.1305,
+          "low": 81464.5391,
+          "uncertainty_pct": 0.136
         },
         {
           "i": 6,
-          "time": "2026-10-20 07:20:00+00:00",
-          "open": 81703.9786,
-          "close": 81689.3513,
-          "high": 81841.3734,
-          "low": 81537.3292,
-          "uncertainty_pct": 0.152
+          "time": "2026-10-20 07:50:00+00:00",
+          "open": 81595.3348,
+          "close": 81583.7909,
+          "high": 81725.1319,
+          "low": 81442.4498,
+          "uncertainty_pct": 0.149
         },
         {
           "i": 7,
-          "time": "2026-10-20 07:25:00+00:00",
-          "open": 81689.3513,
-          "close": 81674.9458,
-          "high": 81836.9246,
-          "low": 81512.967,
-          "uncertainty_pct": 0.165
+          "time": "2026-10-20 07:55:00+00:00",
+          "open": 81583.7909,
+          "close": 81572.4289,
+          "high": 81723.4636,
+          "low": 81421.3942,
+          "uncertainty_pct": 0.16
         },
         {
           "i": 8,
-          "time": "2026-10-20 07:30:00+00:00",
-          "open": 81674.9458,
-          "close": 81660.6512,
-          "high": 81831.8928,
-          "low": 81489.4096,
-          "uncertainty_pct": 0.176
+          "time": "2026-10-20 08:00:00+00:00",
+          "open": 81572.4289,
+          "close": 81561.158,
+          "high": 81721.2117,
+          "low": 81401.1043,
+          "uncertainty_pct": 0.172
         },
         {
           "i": 9,
-          "time": "2026-10-20 07:35:00+00:00",
-          "open": 81660.6512,
-          "close": 81646.4121,
-          "high": 81826.349,
-          "low": 81466.4752,
-          "uncertainty_pct": 0.187
+          "time": "2026-10-20 08:05:00+00:00",
+          "open": 81561.158,
+          "close": 81549.9325,
+          "high": 81718.4536,
+          "low": 81381.4115,
+          "uncertainty_pct": 0.182
         },
         {
           "i": 10,
-          "time": "2026-10-20 07:40:00+00:00",
-          "open": 81646.4121,
-          "close": 81632.2007,
-          "high": 81820.3575,
-          "low": 81444.0438,
-          "uncertainty_pct": 0.197
+          "time": "2026-10-20 08:10:00+00:00",
+          "open": 81549.9325,
+          "close": 81538.7298,
+          "high": 81715.2562,
+          "low": 81362.2034,
+          "uncertainty_pct": 0.192
         }
       ],
-      "total_move_pct": -0.208,
-      "drift_per_bar": -14.183693,
-      "vol_pct": 0.0623,
-      "atr": 91.5286,
+      "total_move_pct": -0.165,
+      "drift_per_bar": -11.179956,
+      "vol_pct": 0.0607,
+      "atr": 67.1,
       "direction": "DOWN",
       "method": "linear_trend + momentum_decay + realized_vol band"
     },
     "pred_next": {
       "direction": "BULLISH UP",
-      "confidence": 52.71027899092968,
+      "confidence": 55.39458929926603,
       "prediction": "UP"
     },
     "elapsed": 0.0,
@@ -820,48 +813,6 @@
       "available": false
     },
     "candles_tail": [
-      {
-        "time": 1792389300,
-        "open": 82724.6,
-        "high": 82760.9,
-        "low": 82713.8,
-        "close": 82760.9
-      },
-      {
-        "time": 1792389600,
-        "open": 82760.9,
-        "high": 82814.7,
-        "low": 82736.3,
-        "close": 82762.0
-      },
-      {
-        "time": 1792389900,
-        "open": 82762.0,
-        "high": 82811.2,
-        "low": 82747.6,
-        "close": 82798.9
-      },
-      {
-        "time": 1792390200,
-        "open": 82798.9,
-        "high": 82805.8,
-        "low": 82761.3,
-        "close": 82776.3
-      },
-      {
-        "time": 1792390500,
-        "open": 82776.3,
-        "high": 82809.4,
-        "low": 82761.7,
-        "close": 82809.4
-      },
-      {
-        "time": 1792390800,
-        "open": 82809.4,
-        "high": 82836.0,
-        "low": 82736.2,
-        "close": 82737.5
-      },
       {
         "time": 1792391100,
         "open": 82737.5,
@@ -2919,6 +2870,48 @@
         "high": 81842.3,
         "low": 81770.8,
         "close": 81802.4
+      },
+      {
+        "time": 1792479300,
+        "open": 81802.4,
+        "high": 81832.4,
+        "low": 81787.9,
+        "close": 81809.2
+      },
+      {
+        "time": 1792479600,
+        "open": 81809.2,
+        "high": 81848.5,
+        "low": 81781.1,
+        "close": 81827.6
+      },
+      {
+        "time": 1792479900,
+        "open": 81827.6,
+        "high": 81827.6,
+        "low": 81770.2,
+        "close": 81771.9
+      },
+      {
+        "time": 1792480200,
+        "open": 81771.9,
+        "high": 81797.5,
+        "low": 81753.2,
+        "close": 81753.2
+      },
+      {
+        "time": 1792480500,
+        "open": 81753.2,
+        "high": 81753.2,
+        "low": 81679.5,
+        "close": 81697.1
+      },
+      {
+        "time": 1792480800,
+        "open": 81697.1,
+        "high": 81714.3,
+        "low": 81670.0,
+        "close": 81673.8
       }
     ],
     "pred_next_20": [],
@@ -2926,8 +2919,8 @@
       "verdict": "NO_TRADE",
       "verdict_text": "NO TRADE",
       "chosen_direction": "LONG",
-      "chosen_score": 0.4358,
-      "chosen_win_prob": 0.4609,
+      "chosen_score": 0.4348,
+      "chosen_win_prob": 0.5502,
       "chosen_factors": {
         "triple_barrier_prob": {
           "value": 1.0,
@@ -2960,9 +2953,9 @@
           "desc": "MTF: Bearish/Bearish/Bearish"
         },
         "rr_and_hitprob": {
-          "value": 0.188,
+          "value": 0.18,
           "weight": 0.15,
-          "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+          "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
         },
         "llm_structure_quality": {
           "value": 0.0,
@@ -2985,19 +2978,19 @@
           "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
         },
         "expected_value": {
-          "value": 0.4980364956007697,
+          "value": 0.7715806620580846,
           "weight": 0.08,
-          "desc": "EV = +0.498R per trade (need > +0.20R)"
+          "desc": "EV = +0.772R per trade (need > +0.20R)"
         }
       },
       "chosen_vetoes": [
         "All 3 timeframes bearish but trade is LONG",
-        "TP1 hit prob 6.7% below 35.0% minimum",
-        "Calibrated win prob 46.1% below 55% minimum"
+        "TP1 hit prob 13.6% below 35.0% minimum",
+        "SL hit prob 50.4% too high vs TP1 13.6%"
       ],
       "long_eval": {
         "direction": "LONG",
-        "confluence_score": 0.4358,
+        "confluence_score": 0.4348,
         "factors": {
           "triple_barrier_prob": {
             "value": 1.0,
@@ -3030,9 +3023,9 @@
             "desc": "MTF: Bearish/Bearish/Bearish"
           },
           "rr_and_hitprob": {
-            "value": 0.188,
+            "value": 0.18,
             "weight": 0.15,
-            "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+            "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
           },
           "llm_structure_quality": {
             "value": 0.0,
@@ -3055,23 +3048,23 @@
             "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
           },
           "expected_value": {
-            "value": 0.4980364956007697,
+            "value": 0.7715806620580846,
             "weight": 0.08,
-            "desc": "EV = +0.498R per trade (need > +0.20R)"
+            "desc": "EV = +0.772R per trade (need > +0.20R)"
           }
         },
         "vetoes": [
           "All 3 timeframes bearish but trade is LONG",
-          "TP1 hit prob 6.7% below 35.0% minimum",
-          "Calibrated win prob 46.1% below 55% minimum"
+          "TP1 hit prob 13.6% below 35.0% minimum",
+          "SL hit prob 50.4% too high vs TP1 13.6%"
         ],
-        "win_probability": 0.4609,
-        "expected_value_R": 0.498,
+        "win_probability": 0.5502,
+        "expected_value_R": 0.7716,
         "gate_passed": false
       },
       "short_eval": {
         "direction": "SHORT",
-        "confluence_score": 0.3983,
+        "confluence_score": 0.3974,
         "factors": {
           "triple_barrier_prob": {
             "value": 1.0,
@@ -3104,9 +3097,9 @@
             "desc": "MTF: Bearish/Bearish/Bearish"
           },
           "rr_and_hitprob": {
-            "value": 0.188,
+            "value": 0.18,
             "weight": 0.15,
-            "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+            "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
           },
           "llm_structure_quality": {
             "value": 0.0,
@@ -3129,51 +3122,52 @@
             "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
           },
           "expected_value": {
-            "value": 0.0,
+            "value": 0.08136122628206288,
             "weight": 0.08,
-            "desc": "EV = -0.086R per trade (need > +0.20R)"
+            "desc": "EV = +0.081R per trade (need > +0.20R)"
           }
         },
         "vetoes": [
           "Ensemble disagreement: only 0% of models support SHORT",
-          "TP1 hit prob 6.7% below 35.0% minimum",
-          "Expected value too low: EV = -0.086R (win_prob 28.1% \u00d7 RR 1:2.25) -- not +EV",
-          "Calibrated win prob 28.1% below 55% minimum"
+          "TP1 hit prob 13.6% below 35.0% minimum",
+          "SL hit prob 50.4% too high vs TP1 13.6%",
+          "Expected value too low: EV = +0.081R (win_prob 33.6% \u00d7 RR 1:2.22) -- not +EV",
+          "Calibrated win prob 33.6% below 55% minimum"
         ],
-        "win_probability": 0.2814,
-        "expected_value_R": -0.0856,
+        "win_probability": 0.3358,
+        "expected_value_R": 0.0814,
         "gate_passed": false
       },
       "threshold": 0.62,
       "min_win_prob": 0.55
     },
     "reasoning": {
-      "headline": "\u2717 No trade. Strongest direction was LONG at 44% confluence (need \u226562%).",
+      "headline": "\u2717 No trade. Strongest direction was LONG at 43% confluence (need \u226562%).",
       "bullets": [
         "ML ensemble stack is 87.7% bullish (9 models trained on real candles)",
-        "Valid 1:2.25 R/R setup against real structural support / resistance",
-        "Stop loss anchored beyond $81,825.47 (S level, strength 1437.0)",
+        "Valid 1:2.22 R/R setup against real structural support / resistance",
+        "Stop loss anchored beyond $81,781.61 (R level, strength 1446.0)",
         "Fresh demand zone at $81,453.90-$81,462.60 below current price (dip-buy area)"
       ],
       "against": [
         "All 3 timeframes are bearish \u2014 trade fights the trend",
-        "Historical TP1 hit-rate only 6.7% \u2014 structurally weak target",
-        "SL hit-prob 39.2% > 1.5x TP1 hit-prob 6.7% \u2014 bad risk shape",
-        "2 unfilled bearish FVG(s) \u2014 price tends to fill these going down",
+        "Historical TP1 hit-rate only 13.6% \u2014 structurally weak target",
+        "SL hit-prob 50.4% > 1.5x TP1 hit-prob 13.6% \u2014 bad risk shape",
+        "4 unfilled bearish FVG(s) \u2014 price tends to fill these going down",
         "All 3 timeframes bearish but trade is LONG",
-        "TP1 hit prob 6.7% below 35.0% minimum",
-        "Calibrated win prob 46.1% below 55% minimum"
+        "TP1 hit prob 13.6% below 35.0% minimum",
+        "SL hit prob 50.4% too high vs TP1 13.6%"
       ],
-      "structure_explanation": "Entry at $81,802.4000 (current price). Stop loss at $81,390.5214 is 0.50% away \u2014 placed beyond the nearest opposing structural level so any clean tag of SL means the thesis is invalidated. TP1 at $82,728.6500 is 1.13% away (1:2.25 R/R), TP2 at $82,820.1786 (1:2.47 R/R).",
-      "full_paragraph": "\u2717 No trade. Strongest direction was LONG at 44% confluence (need \u226562%). The case FOR the trade: ML ensemble stack is 87.7% bullish (9 models trained on real candles); Valid 1:2.25 R/R setup against real structural support / resistance; Stop loss anchored beyond $81,825.47 (S level, strength 1437.0); Fresh demand zone at $81,453.90-$81,462.60 below current price (dip-buy area). The case AGAINST: All 3 timeframes are bearish \u2014 trade fights the trend; Historical TP1 hit-rate only 6.7% \u2014 structurally weak target; SL hit-prob 39.2% > 1.5x TP1 hit-prob 6.7% \u2014 bad risk shape; 2 unfilled bearish FVG(s) \u2014 price tends to fill these going down; All 3 timeframes bearish but trade is LONG. Entry at $81,802.4000 (current price). Stop loss at $81,390.5214 is 0.50% away \u2014 placed beyond the nearest opposing structural level so any clean tag of SL means the thesis is invalidated. TP1 at $82,728.6500 is 1.13% away (1:2.25 R/R), TP2 at $82,820.1786 (1:2.47 R/R)."
+      "structure_explanation": "Entry at $81,673.8000 (current price). Stop loss at $81,371.8500 is 0.37% away \u2014 placed beyond the nearest opposing structural level so any clean tag of SL means the thesis is invalidated. TP1 at $82,344.8000 is 0.82% away (1:2.22 R/R), TP2 at $82,411.9000 (1:2.44 R/R).",
+      "full_paragraph": "\u2717 No trade. Strongest direction was LONG at 43% confluence (need \u226562%). The case FOR the trade: ML ensemble stack is 87.7% bullish (9 models trained on real candles); Valid 1:2.22 R/R setup against real structural support / resistance; Stop loss anchored beyond $81,781.61 (R level, strength 1446.0); Fresh demand zone at $81,453.90-$81,462.60 below current price (dip-buy area). The case AGAINST: All 3 timeframes are bearish \u2014 trade fights the trend; Historical TP1 hit-rate only 13.6% \u2014 structurally weak target; SL hit-prob 50.4% > 1.5x TP1 hit-prob 13.6% \u2014 bad risk shape; 4 unfilled bearish FVG(s) \u2014 price tends to fill these going down; All 3 timeframes bearish but trade is LONG. Entry at $81,673.8000 (current price). Stop loss at $81,371.8500 is 0.37% away \u2014 placed beyond the nearest opposing structural level so any clean tag of SL means the thesis is invalidated. TP1 at $82,344.8000 is 0.82% away (1:2.22 R/R), TP2 at $82,411.9000 (1:2.44 R/R)."
     }
   },
   "decision": {
     "verdict": "NO_TRADE",
     "verdict_text": "NO TRADE",
     "chosen_direction": "LONG",
-    "chosen_score": 0.4358,
-    "chosen_win_prob": 0.4609,
+    "chosen_score": 0.4348,
+    "chosen_win_prob": 0.5502,
     "chosen_factors": {
       "triple_barrier_prob": {
         "value": 1.0,
@@ -3206,9 +3200,9 @@
         "desc": "MTF: Bearish/Bearish/Bearish"
       },
       "rr_and_hitprob": {
-        "value": 0.188,
+        "value": 0.18,
         "weight": 0.15,
-        "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+        "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
       },
       "llm_structure_quality": {
         "value": 0.0,
@@ -3231,19 +3225,19 @@
         "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
       },
       "expected_value": {
-        "value": 0.4980364956007697,
+        "value": 0.7715806620580846,
         "weight": 0.08,
-        "desc": "EV = +0.498R per trade (need > +0.20R)"
+        "desc": "EV = +0.772R per trade (need > +0.20R)"
       }
     },
     "chosen_vetoes": [
       "All 3 timeframes bearish but trade is LONG",
-      "TP1 hit prob 6.7% below 35.0% minimum",
-      "Calibrated win prob 46.1% below 55% minimum"
+      "TP1 hit prob 13.6% below 35.0% minimum",
+      "SL hit prob 50.4% too high vs TP1 13.6%"
     ],
     "long_eval": {
       "direction": "LONG",
-      "confluence_score": 0.4358,
+      "confluence_score": 0.4348,
       "factors": {
         "triple_barrier_prob": {
           "value": 1.0,
@@ -3276,9 +3270,9 @@
           "desc": "MTF: Bearish/Bearish/Bearish"
         },
         "rr_and_hitprob": {
-          "value": 0.188,
+          "value": 0.18,
           "weight": 0.15,
-          "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+          "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
         },
         "llm_structure_quality": {
           "value": 0.0,
@@ -3301,23 +3295,23 @@
           "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
         },
         "expected_value": {
-          "value": 0.4980364956007697,
+          "value": 0.7715806620580846,
           "weight": 0.08,
-          "desc": "EV = +0.498R per trade (need > +0.20R)"
+          "desc": "EV = +0.772R per trade (need > +0.20R)"
         }
       },
       "vetoes": [
         "All 3 timeframes bearish but trade is LONG",
-        "TP1 hit prob 6.7% below 35.0% minimum",
-        "Calibrated win prob 46.1% below 55% minimum"
+        "TP1 hit prob 13.6% below 35.0% minimum",
+        "SL hit prob 50.4% too high vs TP1 13.6%"
       ],
-      "win_probability": 0.4609,
-      "expected_value_R": 0.498,
+      "win_probability": 0.5502,
+      "expected_value_R": 0.7716,
       "gate_passed": false
     },
     "short_eval": {
       "direction": "SHORT",
-      "confluence_score": 0.3983,
+      "confluence_score": 0.3974,
       "factors": {
         "triple_barrier_prob": {
           "value": 1.0,
@@ -3350,9 +3344,9 @@
           "desc": "MTF: Bearish/Bearish/Bearish"
         },
         "rr_and_hitprob": {
-          "value": 0.188,
+          "value": 0.18,
           "weight": 0.15,
-          "desc": "RR 1:2.25 | TP1 hit 6.7% | SL hit 39.2%"
+          "desc": "RR 1:2.22 | TP1 hit 13.6% | SL hit 50.4%"
         },
         "llm_structure_quality": {
           "value": 0.0,
@@ -3375,24 +3369,25 @@
           "desc": "Market regime: RANGING  (ADX=?, Hurst=?)"
         },
         "expected_value": {
-          "value": 0.0,
+          "value": 0.08136122628206288,
           "weight": 0.08,
-          "desc": "EV = -0.086R per trade (need > +0.20R)"
+          "desc": "EV = +0.081R per trade (need > +0.20R)"
         }
       },
       "vetoes": [
         "Ensemble disagreement: only 0% of models support SHORT",
-        "TP1 hit prob 6.7% below 35.0% minimum",
-        "Expected value too low: EV = -0.086R (win_prob 28.1% \u00d7 RR 1:2.25) -- not +EV",
-        "Calibrated win prob 28.1% below 55% minimum"
+        "TP1 hit prob 13.6% below 35.0% minimum",
+        "SL hit prob 50.4% too high vs TP1 13.6%",
+        "Expected value too low: EV = +0.081R (win_prob 33.6% \u00d7 RR 1:2.22) -- not +EV",
+        "Calibrated win prob 33.6% below 55% minimum"
       ],
-      "win_probability": 0.2814,
-      "expected_value_R": -0.0856,
+      "win_probability": 0.3358,
+      "expected_value_R": 0.0814,
       "gate_passed": false
     },
     "threshold": 0.62,
     "min_win_prob": 0.55
   },
-  "saved_at": "2026-10-20T06:59:16.994511Z",
-  "_saved_at": "2026-10-20T06:59:16.994527Z"
+  "saved_at": "2026-10-20T07:29:51.518601Z",
+  "_saved_at": "2026-10-20T07:29:51.518617Z"
 }
