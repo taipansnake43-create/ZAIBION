@@ -6,9 +6,16 @@
       "size_kb": 77.7,
       "saved_to": "storage",
       "saved_at": 1792551849.466895
+    },
+    "rf": {
+      "wf": 0.9985256682223165,
+      "needs_sc": false,
+      "size_kb": 544.1,
+      "saved_to": "storage",
+      "saved_at": 1792551900.8703442
     }
   },
   "dl": {},
   "nn": {},
-  "_saved_at": "2026-10-21T03:04:09.466942Z"
+  "_saved_at": "2026-10-21T03:05:00.870372Z"
 }
