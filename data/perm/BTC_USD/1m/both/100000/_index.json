@@ -25,11 +25,11 @@
     },
     "regime_nn": {
       "class": "RegimeDetectorNNWrapper",
-      "size_kb": 123.3,
+      "size_kb": 130.8,
       "saved_to": "storage",
       "train_acc": 0.5,
-      "saved_at": 1792552505.66793
+      "saved_at": 1792588087.3709679
     }
   },
-  "_saved_at": "2026-10-21T13:07:07.419689Z"
+  "_saved_at": "2026-10-21T13:08:07.370999Z"
 }
